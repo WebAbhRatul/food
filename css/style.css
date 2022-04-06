@@ -8,6 +8,10 @@
   src: url("../fonts/Raleway-Medium.ttf");
 }
 @font-face {
+  font-family: "Raleway-extrabold";
+  src: url("../fonts/Raleway-ExtraBold.ttf");
+}
+@font-face {
   font-family: "Raleway-bold";
   src: url("../fonts/Raleway-Bold.ttf");
 }
@@ -104,6 +108,35 @@ header.topbar .icons a {
 .justify-center {
   justify-content: center;
 }
+.btn {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  line-height: 0.8;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--heaven);
+  border: 1px solid transparent;
+}
+.btn-primary:hover {
+  background-color: var(--heaven);
+  color: var(--primary);
+  border: 1px solid var(--secondary);
+}
+.btn-secondary {
+  background-color: var(--secondary);
+  color: var(--pure);
+  border: 1px solid transparent;
+}
+.btn-secondary:hover {
+  background-color: var(--pure);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
 
 /*============================================================ Nav Top  */
 nav .top {
@@ -160,4 +193,43 @@ nav .navbar .container a:hover {
   display: block;
   bottom: -20px;
   z-index: -1;
+}
+/*=================================================== Header Hero Section  */
+header.hero {
+  height: 600px;
+  background-image: url(../img/hero.png);
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+header.hero .container {
+  position: relative;
+}
+header.hero .container .welcome span {
+  font-family: "Raleway-bold";
+  margin-right: 0.75rem;
+  color: var(--secondary);
+}
+header.hero .container h1 {
+  font-family: "Raleway-extrabold";
+  color: var(--secondary);
+  font-size: 2.5rem;
+  margin-bottom: 0.35rem;
+}
+header.hero .container h1 span {
+  color: var(--primary);
+}
+header.hero .container p {
+  font-family: "Raleway-medium";
+  width: 50%;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+header.hero .container button:first-child {
+  margin-right: 0.5rem;
+}
+header.hero .container .hero-img {
+  position: absolute;
+  top: -40px;
+  right: 40px;
 }
