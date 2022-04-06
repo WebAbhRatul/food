@@ -233,3 +233,11 @@ header.hero .container .hero-img {
   top: -40px;
   right: 40px;
 }
+
+/* Top Products Section  */
+section {
+  padding: 4rem 0;
+}
+section.top-products {
+  background: var(--light);
+}
