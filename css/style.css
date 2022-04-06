@@ -44,6 +44,7 @@
 }
 body {
   -webkit-font-smoothing: antialiased;
+  font-family: "Raleway-regular";
 }
 
 .container {
@@ -264,7 +265,7 @@ section.top-products {
   position: relative;
   font-family: "Raleway-bold";
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 .section-heading::after {
   content: "";
