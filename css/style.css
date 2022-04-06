@@ -185,6 +185,10 @@ nav .navbar .container a:hover {
   position: relative;
   background: var(--heaven);
 }
+.magic-shadow-sm {
+  position: relative;
+  background: var(--heaven);
+}
 .magic-shadow::after {
   content: "";
   position: absolute;
@@ -195,6 +199,18 @@ nav .navbar .container a:hover {
   background-position: center;
   display: block;
   bottom: -20px;
+  z-index: -1;
+}
+.magic-shadow-sm::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 69px;
+  background-image: url(../icons/shadow-sm.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  bottom: -23px;
   z-index: -1;
 }
 /*=================================================== Header Hero Section  */
@@ -322,4 +338,32 @@ hr {
 }
 .slick-list {
   margin: 0 -27px;
+}
+.slick-track {
+  padding: 1rem 0;
+}
+.top-products .container .slider .slider-btn {
+  width: 30px;
+  height: 30px;
+  background: var(--primary);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.top-products .container .slider {
+  position: relative;
+}
+.top-products .container .slider .prev-btn {
+  position: absolute;
+  top: 46%;
+  left: -3rem;
+}
+.top-products .container .slider .next-btn {
+  position: absolute;
+  top: 46%;
+  right: -3rem;
+}
+.top-products .btn-wrapper {
+  margin-top: 2rem;
 }
