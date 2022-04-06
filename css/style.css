@@ -1,4 +1,4 @@
-/* Fonts  */
+/*===================================================================== Fonts  */
 @font-face {
   font-family: "Raleway-regular";
   src: url("../fonts/Raleway-Regular.ttf");
@@ -20,7 +20,7 @@
   src: url("../fonts/Raleway-Black.ttf");
 }
 
-/* colors  */
+/*====================================================================== colors  */
 
 :root {
   --primary: #eebf00;
@@ -32,7 +32,7 @@
   --heaven: #fffffff;
   --footer: #2d333f;
 }
-/* Reset  */
+/*=============================================================== Reset  */
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +48,7 @@ body {
   margin: 0 auto;
 }
 
-/* Media Queries  */
+/*========================================================== Media Queries  */
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -70,7 +70,7 @@ body {
   }
 }
 
-/* Header  */
+/*================================================================== Header  */
 header.topbar {
   background-color: var(--secondary);
   color: var(--pure);
@@ -91,7 +91,7 @@ header.topbar .container .auth > div img {
 header.topbar .icons a {
   margin-right: 0.6rem;
 }
-/* Utility Class  */
+/*=============================================================== Utility Class  */
 .flex {
   display: flex;
 }
@@ -105,7 +105,7 @@ header.topbar .icons a {
   justify-content: center;
 }
 
-/* Nav Top  */
+/*============================================================ Nav Top  */
 nav .top {
   padding: 1.5rem 0;
 }
@@ -125,4 +125,22 @@ nav .top .container .time h6 {
 nav .top .container .contact img,
 nav .top .container .time img {
   margin-right: 1rem;
+}
+/*======================================================== Navbar Menu  */
+nav .navbar .container a {
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 1rem;
+  font-family: "Raleway-semibold";
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+}
+nav .navbar .container a.active {
+  background-color: var(--primary);
+  color: var(--pure);
+}
+
+nav .navbar .container a:hover {
+  background-color: var(--primary);
+  color: var(--pure);
 }
