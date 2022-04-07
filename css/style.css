@@ -678,3 +678,7 @@ footer .box:nth-child(3) h3 {
 footer .box:nth-child(3) ul li a img {
   margin-right: 0.75rem;
 }
+footer.copyright {
+  color: var(--pure);
+  padding: 2rem 0;
+}
