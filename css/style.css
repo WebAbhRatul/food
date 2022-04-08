@@ -41,6 +41,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 body {
   -webkit-font-smoothing: antialiased;
@@ -51,7 +52,6 @@ body {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 /*========================================================== Media Queries  */
@@ -341,6 +341,7 @@ section.top-products {
   background: var(--heaven);
   padding: 1.5rem 0;
   border-radius: 4px;
+  overflow: hidden;
 }
 .top-products .container .slider .food-slider .food-card .product-image img {
   width: 80%;
@@ -819,11 +820,14 @@ footer.copyright {
 }
 
 @media (max-width: 768px) {
+  .slick-list {
+    margin: 0;
+  }
   .subscribe .container {
     flex-direction: column;
   }
   section.big-deal .timer {
-    margin-right: -1rem;
+    margin-right: 0;
   }
   section.big-deal .timer > div {
     margin-right: 1rem;
@@ -843,6 +847,7 @@ footer.copyright {
   }
   section.our-services .container .card-warpper {
     flex-direction: column;
+    margin-right: 0;
   }
   section.our-services .service-card {
     margin-right: 0;
@@ -862,6 +867,7 @@ footer.copyright {
   footer .box:nth-child(3) > div {
     justify-content: flex-start;
   }
-}
-@media (max-width: 576px) {
+  .food-card {
+    margin: 0;
+  }
 }
