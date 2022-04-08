@@ -6,4 +6,7 @@ $(document).ready(function () {
     prevArrow: ".prev-btn",
     nextArrow: ".next-btn",
   });
+  $(".nav-trigger").click(function () {
+    $(".site-content-wrapper").toggleClass("scaled");
+  });
 });
